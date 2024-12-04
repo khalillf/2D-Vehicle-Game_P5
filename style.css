@@ -1,0 +1,58 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+#gameOver {
+  display: none; /* Hide the game over message initially */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  background-image: url('assets/roles.jpg'); /* Add your background image here */
+  background-size: cover;
+  padding: 50px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#controlPanel {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 300px;
+  background-image: url('assets/roles.jpg'); /* Background image for the control panel */
+  background-size: cover;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  color: rgb(131, 131, 131);
+}
+
+#controlPanel h3 {
+  margin-top: 0;
+  text-align: center;
+}
+
+#controlPanel .sliderContainer {
+  margin-bottom: 10px;
+}
+
+#controlPanel input[type=range] {
+  width: 100%;
+}
+
+#controlPanel .controls {
+  margin-top: 10px;
+}
+
+#controlPanel .controls p {
+  margin: 5px 0;
+}
